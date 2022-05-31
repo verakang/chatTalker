@@ -1,0 +1,990 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝以上為CSS RESET＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 16px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    color: #221E1F;
+}
+
+sub {
+    vertical-align: sub;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.home {
+    background: url("../img/bg_home.svg") no-repeat top right;
+    background-size: 110vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.home-main {
+    background: url("../img/home.svg") 85% 60% no-repeat;
+    background-size: 600px;
+    height: 100vh;
+    position: relative;
+}
+
+.program-main {
+    background: url("../img/banner.svg") right top no-repeat;
+    height: 620px;
+    margin-bottom: 150px;
+    position: relative;
+    background-color: #F7F9FD;
+    border-radius: 0 0 0 300px;
+}
+
+.program-bg-ball {
+    width: 94px;
+    height: 361px;
+    background: url("../img/ball03.svg") no-repeat;
+    background-size: 361px;
+    background-position: right;
+    position: absolute;
+    left: 0;
+    top: 100vh;
+    z-index: -1;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 20px;
+}
+
+.logo a {
+    display: block;
+    width: 220px;
+    height: 40px;
+    background: url("../img/logo.png") no-repeat;
+    background-size: cover;
+    text-indent: 101%;
+    overflow: hidden;
+}
+
+.btn-program {
+    display: block;
+    width: 128px;
+    height: 40px;
+    background-color: #FF5D50;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.btn-program:hover {
+    background-color: #ff6e63;
+
+}
+
+.home-banner {
+    padding: 30px 20px;
+}
+
+.program-banner {
+    margin-top: 50px;
+    padding: 30px 20px;
+}
+
+.slogan {
+    margin-top: 160px;
+    font-size: 18px;
+    color: #56C4C5;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 70px;
+    margin-top: 8px;
+}
+
+.home-banner p,
+.program-banner p {
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.banner-bg-ball {
+    width: 138px;
+    height: 360px;
+    background: url("../img/ball01.svg");
+    background-position: right;
+    position: absolute;
+    left: 0;
+    bottom: -180px;
+    z-index: -1;
+}
+
+@media (max-width:767px) {
+    .top {
+        border-bottom: 2px solid #FFD153;
+        background-color: #fff;
+    }
+
+    .slogan {
+        margin-top: 40px;
+    }
+
+    .home {
+        background: url("../img/bg_home_sm.svg") 50% 530px no-repeat;
+        background-size: 80%;
+    }
+
+    .home-main {
+        background: url("../img/home.svg") 50% 420px no-repeat;
+        background-size: 450px;
+        height: 100vh;
+    }
+
+    .program-main {
+        background: url("../img/banner_sm.svg") right bottom no-repeat;
+        background-size: cover;
+        height: 700px;
+        margin-bottom: 30px;
+        background-color: #F7F9FD;
+        border-radius: 0 0 0 300px;
+
+    }
+
+    .banner-bg-ball {
+        width: 78px;
+        height: 320px;
+        bottom: -380px;
+    }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝以上為共用banner＝＝＝＝＝＝＝＝＝＝＝ */
+
+.sns {
+    padding: 30px 20px 0 20px;
+    text-align: center;
+}
+
+.sns h3 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.sns-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.sns-item {
+    margin: 0 20px;
+}
+
+.sns-item img {
+    max-width: 90px;
+    height: 90px;
+    margin-bottom: 24px;
+}
+
+.sns-title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.sns-item p {
+    line-height: 24px;
+}
+
+@media (max-width:767px) {
+    .sns-list {
+        flex-wrap: wrap;
+        margin-top: 80px;
+    }
+
+    .sns-item {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝以上為index-sns＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.role {
+    text-align: center;
+    position: relative;
+}
+
+.role h3 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.role p {
+    margin-top: 16px;
+    line-height: 24px;
+}
+
+.role-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.role-item {
+    width: 23.5%;
+    margin-right: 12px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.role-item:hover {
+    background-color: #e7fdfd;
+}
+
+.role-list :nth-of-type(4) {
+    margin-right: 0;
+}
+
+.role-item img {
+    width: 100%;
+}
+
+.role-title {
+    color: #56C4C5;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.role-item p {
+    padding: 8px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.role-bg-ball {
+    background: url("../img/ball02.svg");
+    background-size: cover;
+    width: 210px;
+    height: 310px;
+    position: absolute;
+    right: 0;
+    bottom: -200px;
+    z-index: -1;
+}
+
+@media (max-width:992px) {
+    .role-item {
+        width: 48%;
+        margin-bottom: 32px;
+    }
+
+    .role-list :nth-of-type(2n) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width:767px) {
+    .role-item {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .role-item {
+        font-size: 24px;
+    }
+
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝以上為index-role＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.introduce {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.introduce-list {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.introduce-item {
+    width: 44%;
+    margin-right: 6%;
+    margin-bottom: 28px;
+    padding: 0 30px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px #CCC;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.introduce-item:hover {
+    background-color: #e7fdfd;
+}
+
+.introduce-icon {
+    width: 86px;
+    height: 86px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px #CCC;
+    margin-top: 32px;
+}
+
+.introduce-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-right: 10px;
+}
+
+.introduce-item p {
+    line-height: 24px;
+    margin-top: 16px;
+    margin-bottom: 48px;
+    margin-right: 10px;
+}
+
+.introduce content {
+    width: 50%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.introduce content h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 46px;
+}
+
+.introduce content p {
+    line-height: 24px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.bg-green {
+    background-color: #56C4C5;
+}
+
+.color-green {
+    color: #56C4C5;
+}
+
+.bg-green:hover {
+    background-color: #69dddf;
+}
+
+@media (max-width:992px) {
+    .introduce {
+        flex-direction: column-reverse;
+    }
+
+    .introduce-list {
+        width: 100%;
+        padding: 0 3%;
+    }
+
+    .introduce-item {
+        margin: 3%;
+        padding: 0 50px;
+    }
+
+    .introduce content {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 50px;
+        padding-left: 0;
+    }
+}
+
+@media (max-width:767px) {
+    .introduce-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝以上為index-introduce＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.comment {
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.comment h3 {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.comment-list {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.comment-item {
+    width: 33.3%;
+    margin-right: 16px;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px #CCC;
+    background-color: #fff;
+}
+
+.comment-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    left: 32px;
+    top: -56px;
+}
+
+.comment-content {
+    line-height: 24px;
+    padding: 32px 28px;
+}
+
+.comment-list :last-of-type {
+    margin-right: 0;
+}
+
+.profile {
+    padding: 0px 28px;
+}
+
+.profile .company {
+    padding-top: 24px;
+    font-weight: 500;
+    border-top: 1px solid #ccc;
+}
+
+.profile .position {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.stars {
+    width: 90px;
+    height: 17px;
+    display: flex;
+    position: absolute;
+    right: 28px;
+    bottom: 24px;
+}
+
+.star {
+    width: 16px;
+    height: 17px;
+    margin-left: 3px;
+    background: url("../img/icon_star.svg") no-repeat;
+    background-size: 16px;
+    background-position: center center;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+}
+
+.more li {
+    width: 10px;
+    height: 10px;
+    background-color: #DDD;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.more :last-of-type {
+    width: 16px;
+    border-radius: 15px;
+    background-color: #FFD153;
+}
+
+.comment-bg-ball {
+    width: 150px;
+    height: 150px;
+    background: url("../img/ball03.svg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: -90px;
+    z-index: -1;
+}
+
+@media (max-width:992px) {
+    .comment-list {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .comment-item {
+        width: 80%;
+        margin-right: 0px;
+        margin-bottom: 100px;
+    }
+
+    .comment-item img {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .comment-bg-ball {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝以上為index-comment＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.ads {
+    width: 100%;
+    height: 500px;
+    background: url("../img/home_footer.svg") no-repeat center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.ads h3 {
+    font-size: 32px;
+    font-weight: 500;
+    padding-top: 320px;
+}
+
+.ads .bg-green {
+    position: absolute;
+    top: 400px;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝以上為index-ads＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+footer {
+    padding: 16px;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+.gotop a {
+    display: block;
+    width: 71px;
+    height: 71px;
+    position: fixed;
+    right: 48px;
+    bottom: 32px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝以上為共用footer＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.choice {
+    margin-bottom: 100px;
+}
+
+.choice h3 {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.choice .choice-pick {
+    margin-top: 60px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.choice-pick li a {
+    display: block;
+    width: 130px;
+    height: 50px;
+    font-size: 18px;
+    color: #56C4C5;
+    border: 1px solid #56C4C5;
+    border-radius: 20px;
+    margin: 0 8px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+.choice ul li a:hover {
+    background-color: #56C4C5;
+    color: #fff;
+}
+
+.choice .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.basic,
+.standard {
+    width: 50%;
+    margin: 0 15px;
+    box-shadow: 0px 2px 10px #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    z-index: 5;
+}
+
+.basic h4,
+.standard h4 {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.detail {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.calculate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculate li {
+    padding: 12px 12px;
+    margin: 0 5px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 28px;
+}
+
+.calculate :nth-child(2) {
+    padding: 0;
+    width: 16px;
+    text-align: center;
+    background: none;
+}
+
+.calculate li .mark {
+    color: #56C4C5;
+}
+
+.calculate span {
+    font-size: 32px;
+}
+
+.calculate li sub {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.check {
+    width: 80%;
+    margin-top: 32px;
+    margin-left: 20px;
+}
+
+.check li {
+    margin-bottom: 16px;
+    line-height: 24px;
+}
+
+.check li img {
+    margin-right: 10px;
+}
+
+.check-btn {
+    display: block;
+    width: 136px;
+    height: 50px;
+    margin-top: 24px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    background-color: #56C4C5;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: 44px;
+}
+
+.check-btn:hover {
+    background-color: #69dddf;
+}
+
+@media (max-width:767px) {
+    .choice .choice-pick {
+        justify-content: flex-start;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .choice .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .basic,
+    .standard {
+        width: 90%;
+        margin: 30px 20px;
+    }
+
+    .calculate li {
+        padding: 24px 32px;
+        margin: 0 10px;
+    }
+
+    .check {
+        width: 65%;
+        margin-left: 10px;
+    }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝以上為choice＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.qna {
+    margin-bottom: 100px;
+}
+
+.qna h3 {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.qna-list {
+    margin-top: 48px;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.qna-title div {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    margin-bottom: 16px;
+    box-shadow: 0px 2px 10px #DDD;
+    border-radius: 8px;
+}
+
+.qna-title div p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.qna-action {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 32px;
+    box-shadow: 0px 2px 10px #DDD;
+    border-radius: 8px;
+}
+
+.qna-action div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.qna-action div p {
+    font-size: 18px;
+    color: #56C4C5;
+    font-weight: 500;
+}
+
+.qna-ans {
+    line-height: 32px;
+    margin-bottom: 32px;
+}
