@@ -295,7 +295,7 @@ body {
     .home-banner p,
     .program-banner p {
         line-height: 24px;
-        padding: 16px;
+        padding: 0 16px;
     }
 
     .home {
@@ -304,7 +304,7 @@ body {
     }
 
     .home-main {
-        background: url("../img/home.svg") 50% 320px no-repeat;
+        background: url("../img/home.svg") 50% 350px no-repeat;
         background-size: 450px;
         height: 100vh;
     }
@@ -316,13 +316,20 @@ body {
         margin-bottom: 30px;
         background-color: #F7F9FD;
         border-radius: 0 0 0 300px;
-
     }
 
     .banner-bg-ball {
         width: 78px;
         height: 320px;
         bottom: -380px;
+    }
+}
+
+@media (max-width:576px) {
+    .home-main {
+        background: url("../img/home.svg") 50% 320px no-repeat;
+        background-size: 450px;
+        height: 90vh;
     }
 }
 
@@ -370,6 +377,7 @@ body {
     .sns-list {
         flex-wrap: wrap;
         margin-top: 80px;
+        margin-bottom: 50px;
     }
 
     .sns-item {
@@ -464,6 +472,10 @@ body {
         padding: 0 50px;
     }
 
+    .role-list {
+        margin-top: 20px;
+    }
+
     .role-item {
         width: 100%;
         font-size: 24px;
@@ -472,6 +484,7 @@ body {
 
     .role-list :nth-of-type(2n) {
         margin: 30px;
+
     }
 }
 
