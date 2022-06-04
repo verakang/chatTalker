@@ -160,6 +160,7 @@ sub {
 
 body {
     font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
 }
 
 .home {
@@ -251,7 +252,6 @@ body {
 .title {
     font-size: 48px;
     font-weight: 500;
-    line-height: 70px;
     margin-top: 8px;
 }
 
@@ -294,7 +294,6 @@ body {
 
     .home-banner p,
     .program-banner p {
-        line-height: 24px;
         padding: 0 16px;
         margin-top: 0;
     }
@@ -369,10 +368,6 @@ body {
     font-weight: 500;
 }
 
-.sns-item p {
-    line-height: 24px;
-}
-
 @media (max-width:767px) {
     .sns-list {
         flex-wrap: wrap;
@@ -400,7 +395,6 @@ body {
 
 .role p {
     margin-top: 16px;
-    line-height: 24px;
 }
 
 .role-list {
@@ -441,7 +435,6 @@ body {
 
 .role-item p {
     padding: 8px;
-    line-height: 24px;
     margin-bottom: 16px;
 }
 
@@ -531,19 +524,17 @@ body {
 .introduce-title {
     font-size: 18px;
     font-weight: 500;
-    line-height: 24px;
     margin-top: 24px;
     margin-right: 10px;
 }
 
 .introduce-item p {
-    line-height: 24px;
     margin-top: 16px;
     margin-bottom: 48px;
     margin-right: 10px;
 }
 
-.introduce content {
+.introduce .content {
     width: 50%;
     padding-left: 50px;
     display: flex;
@@ -552,14 +543,12 @@ body {
     align-items: flex-start;
 }
 
-.introduce content h3 {
+.introduce .content h3 {
     font-size: 32px;
     font-weight: 500;
-    line-height: 46px;
 }
 
-.introduce content p {
-    line-height: 24px;
+.introduce .content p {
     margin-top: 16px;
     margin-bottom: 24px;
 }
@@ -591,7 +580,7 @@ body {
         padding: 0 50px;
     }
 
-    .introduce content {
+    .introduce .content {
         width: 100%;
         align-items: center;
         margin-bottom: 50px;
@@ -648,7 +637,6 @@ body {
 }
 
 .comment-content {
-    line-height: 24px;
     padding: 32px 28px;
 }
 
@@ -771,9 +759,8 @@ body {
     padding-top: 320px;
 }
 
-.ads .bg-green {
-    position: absolute;
-    top: 400px;
+.ads .btn-program {
+    margin-top: 40px;
 }
 
 @media (max-width:767px) {
@@ -810,7 +797,6 @@ footer {
 
 .choice h3 {
     font-size: 32px;
-    line-height: 48px;
     font-weight: 500;
     text-align: center;
 }
@@ -827,7 +813,6 @@ footer {
 .choice-pick li a {
     display: block;
     width: 130px;
-    height: 50px;
     font-size: 18px;
     color: #56C4C5;
     border: 1px solid #56C4C5;
@@ -875,7 +860,6 @@ footer {
     margin-top: 24px;
     margin-bottom: 32px;
     text-align: center;
-    line-height: 24px;
 }
 
 .calculate {
@@ -922,7 +906,6 @@ footer {
 
 .check li {
     margin-bottom: 16px;
-    line-height: 24px;
 }
 
 .check li img {
@@ -932,7 +915,6 @@ footer {
 .check-btn {
     display: block;
     width: 136px;
-    height: 50px;
     margin-top: 24px;
     text-align: center;
     line-height: 50px;
@@ -955,7 +937,6 @@ footer {
 
     .choice h3 {
         font-size: 28px;
-        line-height: 42px;
         padding: 0 20px;
     }
 
@@ -1003,20 +984,23 @@ footer {
     margin-top: 48px;
     margin-right: 15px;
     margin-left: 15px;
-    display: flex;
-    flex-direction: column;
 }
 
-.qna-title div {
+.qna-title {
     display: flex;
     justify-content: space-between;
     padding: 16px 32px;
     margin-bottom: 16px;
     box-shadow: 0px 2px 10px #DDD;
     border-radius: 8px;
+    cursor: pointer;
 }
 
-.qna-title div p {
+.qna-title:hover {
+    background-color: #e7fdfd;
+}
+
+.qna-title p {
     font-size: 18px;
     font-weight: 500;
 }
@@ -1027,6 +1011,11 @@ footer {
     padding: 16px 32px;
     box-shadow: 0px 2px 10px #DDD;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+.qna-action:hover {
+    background-color: #e7fdfd;
 }
 
 .qna-action div {
@@ -1054,7 +1043,7 @@ footer {
         margin-left: 20px;
     }
 
-    .qna-title div {
+    .qna-title {
         padding: 16px 20px;
     }
 
